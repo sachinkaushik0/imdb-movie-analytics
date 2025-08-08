@@ -1,6 +1,7 @@
 # TMDB Movie Analytics
 
 Analyze and visualize movie metadata from the TMDB Kaggle dataset. This project includes data cleaning, exploratory data analysis (EDA), and an interactive Streamlit dashboard to explore movie trends by decade, rating, and popularity.
+<img width="1304" height="836" alt="image" src="https://github.com/user-attachments/assets/4ff205a8-deb8-4178-9498-f01eaad55971" />
 
 ---
 
@@ -36,47 +37,31 @@ It contains detailed metadata for 5000+ movies, including:
    cd tmdb-movie-analytics
 (Optional) Create and activate a Python virtual environment:
 
-bash
-Copy
-Edit
+
 python3 -m venv myenv
 source myenv/bin/activate   # macOS/Linux
 myenv\Scripts\activate      # Windows
 Install required Python packages:
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 Download the dataset files from Kaggle and place them inside the data/ folder.
 
 🚀 Running the Project
 Run Exploratory Data Analysis (EDA)
-bash
-Copy
-Edit
+
 python src/eda-tmdb.py
 This script loads cleaned movie data and generates summary statistics and visualizations saved in the output/ directory.
 
 Launch the Streamlit Dashboard
-bash
-Copy
-Edit
+
 streamlit run src/app.py
 Interactive dashboard to filter movies by decade, rating, and popularity with dynamic plots and tables.
 
 🐳 Using Docker (Recommended for Reproducibility)
 Build the Docker image:
-
-bash
-Copy
-Edit
 docker build -t tmdb-analytics .
 Run the container with mounted data and output folders:
 
-bash
-Copy
-Edit
 docker run --rm -v $(pwd)/data:/app/data -v $(pwd)/output:/app/output -p 8501:8501 tmdb-analytics streamlit run src/app.py
 Open your browser at http://localhost:8501 to access the dashboard.
 
@@ -94,6 +79,7 @@ tmdb-movie-analytics/
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation
 └── .gitignore             # Files/folders to ignore in Git
+
 📈 Key Features
 Clean and enrich TMDB movie dataset
 
