@@ -5,8 +5,8 @@ import json
 
 from config import DATA_FILE, OUTPUT_DIR
 
-MOVIE_FILE = '/Users/sachinkaushik/PersonalProjects/imdb-movie-analytics/data/tmdb_5000_movies.csv'
-CREDITS_FILE = '/Users/sachinkaushik/PersonalProjects/imdb-movie-analytics/data/tmdb_5000_credits.csv'
+MOVIE_FILE = 'app/data/tmdb_5000_movies.csv'
+CREDITS_FILE = 'app/imdb-movie-analytics/data/tmdb_5000_credits.csv'
 
 def parse_json_column(column):
     """Safely parse a column containing stringified JSON arrays"""
