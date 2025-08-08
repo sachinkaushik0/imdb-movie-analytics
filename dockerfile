@@ -1,17 +1,17 @@
-# Use official Python image
 FROM python:3.10-slim
 
-# Set working directory
+# Set working directory inside container
 WORKDIR /app
 
-# Copy code and requirements
-COPY requirements.txt requirements.txt
-COPY src/ src/
-COPY data/ data/
+# Copy requirements and install
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install dependencies
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+# Copy source code into container
+COPY src /app/src
 
-# Run the scraping script
-CMD ["python", "src/scrape_imdb.py"]
+# Create output and data directories inside container
+RUN mkdir -p /app/output /app/data
+
+# Default command (optional, override in docker run)
+CMD ["python", "src/eda-tmdb.py"]

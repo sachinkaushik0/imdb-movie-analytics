@@ -1,0 +1,21 @@
+
+    TMDB Dataset EDA Summary
+    -------------------------
+    Total movies: 500
+
+    Top Genres:
+    Action             269
+Adventure          266
+Thriller           139
+Fantasy            137
+Science Fiction    137
+Comedy             134
+Family             133
+Drama              117
+Animation           88
+Crime               47
+
+    Average rating: 6.32
+    Average budget: 121586500.81
+    Average revenue: 364640832.44
+    
