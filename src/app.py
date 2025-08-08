@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-DATA_PATH = "/Users/sachinkaushik/PersonalProjects/imdb-movie-analytics/data/clean_movies.csv"
+DATA_PATH = "app/data/clean_movies.csv"
 
 @st.cache_data
 def load_data():
