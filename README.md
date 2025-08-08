@@ -81,9 +81,7 @@ docker run --rm -v $(pwd)/data:/app/data -v $(pwd)/output:/app/output -p 8501:85
 Open your browser at http://localhost:8501 to access the dashboard.
 
 🗂️ Project Structure
-bash
-Copy
-Edit
+
 tmdb-movie-analytics/
 │
 ├── data/                  # Raw and cleaned datasets (not tracked in Git)
